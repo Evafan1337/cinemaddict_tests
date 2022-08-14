@@ -37,8 +37,26 @@ class BasePage():
         Btn.click()
         self.browser.implicitly_wait(1)
 
+    # click on elem and click on btn is same methods?
+    def click_on_elem_by_xpath(self, xpath):
+        elem = self.browser.find_element(By.XPATH, xpath)
+        elem.click()
+        self.browser.implicitly_wait(1)
+
+    def click_on_child_elem(self, parent, child_css):
+        elem = parent.find_element(By.CSS_SELECTOR, child_css)
+        elem.click()
+        self.browser.implicitly_wait(1)
+
     def find_element_by_xpath(self, xpath):
         elem = self.browser.find_element(By.XPATH, xpath)
+        if(elem):
+            return elem
+        else:
+            return False
+
+    def find_element_by_css(self, css):
+        elem = self.browser.find_element(By.CSS_SELECTOR, css)
         if(elem):
             return elem
         else:

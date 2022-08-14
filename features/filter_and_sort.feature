@@ -8,7 +8,7 @@
 #    Then nothing changes
 #
 #  Scenario: Use sort by default and show movies in Watchlist
-#    Given website is open
+#    Given website is open, all movies parameter set, sort is default
 #    Then we count elements
 #    Then checking pressed menu params
 #    When click sort by default
@@ -18,7 +18,7 @@
 #    And sort param is on changed
 #
 #  Scenario: Use sort by default and show movies in History
-#    Given website is open
+#    Given website is open, all movies parameter set, sort is default
 #    Then we count elements
 #    Then checking pressed menu params
 #    When click sort by default
@@ -28,7 +28,7 @@
 #    And sort param is on changed
 #
 #  Scenario: Use sort by default and show movies in Favorites
-#    Given website is open
+#    Given website is open, all movies parameter set, sort is default
 #    Then we count elements
 #    Then checking pressed menu params
 #    When click sort by default
@@ -39,7 +39,7 @@
 #
 ##   sort by date
 #    Scenario: Use sort by date and show all movies
-#    Given website is open
+#    Given website is open, all movies parameter set, sort is default
 #    Then we count elements
 #    Then checking pressed menu params
 #    When click sort by date
@@ -47,7 +47,7 @@
 #    Then nothing changes
 #
 #  Scenario: Use sort by date and show movies in Watchlist
-#    Given website is open
+#    Given website is open, all movies parameter set, sort is default
 #    Then we count elements
 #    Then checking pressed menu params
 #    When click sort by default
@@ -57,7 +57,7 @@
 #    And sort param is on changed
 #
 #  Scenario: Use sort by date and show movies in History
-#    Given website is open
+#    Given website is open, all movies parameter set, sort is default
 #    Then we count elements
 #    Then checking pressed menu params
 #    When click sort by date
@@ -67,7 +67,7 @@
 #    And sort param is on changed
 #
 #  Scenario: Use sort by date and show movies in Favorites
-#    Given website is open
+#    Given website is open, all movies parameter set, sort is default
 #    Then we count elements
 #    Then checking pressed menu params
 #    When click sort by date
@@ -77,8 +77,8 @@
 #    And sort param is on changed
 #
 ##    sort by rating
-#      Scenario: Use sort by rating and show all movies
-#    Given website is open
+#  Scenario: Use sort by rating and show all movies
+#    Given website is open, all movies parameter set, sort is default
 #    Then we count elements
 #    Then checking pressed menu params
 #    When click sort by default
@@ -86,7 +86,7 @@
 #    Then nothing changes
 #
 #  Scenario: Use sort by rating and show movies in Watchlist
-#    Given website is open
+#    Given website is open, all movies parameter set, sort is default
 #    Then we count elements
 #    Then checking pressed menu params
 #    When click sort by rating
@@ -96,7 +96,7 @@
 #    And sort param is on changed
 #
 #  Scenario: Use sort by rating and show movies in History
-#    Given website is open
+#    Given website is open, all movies parameter set, sort is default
 #    Then we count elements
 #    Then checking pressed menu params
 #    When click sort by rating
@@ -106,7 +106,7 @@
 #    And sort param is on changed
 #
 #  Scenario: Use sort by rating and show movies in Favorites
-#    Given website is open
+#    Given website is open, all movies parameter set, sort is default
 #    Then we count elements
 #    Then checking pressed menu params
 #    When click sort by rating
