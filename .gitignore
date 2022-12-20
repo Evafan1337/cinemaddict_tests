@@ -2,5 +2,6 @@
 /allure-report
 /tmp
 /.idea
+/features/__pycache__
 index_test.py
 index_start.py
