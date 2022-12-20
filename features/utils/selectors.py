@@ -20,6 +20,6 @@ class Selectors():
         "poster": ".film-card__poster",
         "release_date": ".film-card__year",
         "title": ".film-card__title",
-        "comments": "film-card__comments",
+        "comments": ".film-card__comments",
         "details": ".film-details"
     }

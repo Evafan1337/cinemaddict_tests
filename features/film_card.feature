@@ -1,16 +1,20 @@
 Feature: Content view of current film card on the website
+
+  @success
   Scenario: Click on first film poster
     Given film_card.website is open
     When we click on film poster of film with number 1
     Then film card is visible
     And we close it
 
+  @success
   Scenario: Click on first film title
     Given film_card.website is open
     When we click on film title of film with number 1
     Then film card is visible
     And we close it
 
+  @success
   Scenario: Click on first film comment count
     Given film_card.website is open
     When we click on film comments of film with number 1
