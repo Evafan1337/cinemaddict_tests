@@ -16,10 +16,18 @@ class Selectors():
     film_card_title_css_class = '.film-card__title'
     film_card_comment_count = '.film-card__comments'
 
+    main_btn_active_class = ".main-navigation__item--active"
+
     film_card_class = {
         "poster": ".film-card__poster",
         "release_date": ".film-card__year",
         "title": ".film-card__title",
         "comments": ".film-card__comments",
         "details": ".film-details"
+    }
+
+    filtration_btn_xpath = {
+        "watchlist": "/html/body/main/nav/div/a[2]",
+        "history": "/html/body/main/nav/div/a[3]",
+        "favorites": "/html/body/main/nav/div/a[4]"
     }
