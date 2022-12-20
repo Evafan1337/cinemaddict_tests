@@ -1,2 +1,6 @@
 /allure
 /allure-report
+/tmp
+/.idea
+index_test.py
+index_start.py

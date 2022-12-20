@@ -1,0 +1,4 @@
+selenium==3.141.0
+behave==1.2.6
+cryptography==38.0.4
+webdriver-manager==3.8.5

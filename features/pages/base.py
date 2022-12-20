@@ -8,11 +8,13 @@ from time import sleep
 
 class BasePage():
 
-    BASE_URL = "http://localhost:8081/"
+    BASE_URL = "http://localhost:8080/"
     DEBUG_STOP_MARKER = True
 
     def __init__(self):
-        self.service = Service("F:/webdriver/chromedriver.exe")
+        #self.service = Service("F:/webdriver/chromedriver.exe")
+        self.service = Service("chromium.chromedriver")
+        print(self.service)
         self.browser = webdriver.Chrome(service=self.service)
 
     def set_browser_settings(self):
