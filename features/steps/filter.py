@@ -30,7 +30,8 @@ def open(context):
 def step(context, btn_value):
     #context.browserWindow.click_on_button_by_xpath("/html/body/main/nav/div/a[2]")
     context.browserWindow.click_on_button_by_xpath(Selectors.filtration_btn_xpath.get(btn_value))
-    context.browserWindow.after_handle()
+
+    #context.browserWindow.after_handle()
 
 @then("count films on clicked filter parameter and count all films")
 def step(context):
@@ -62,4 +63,4 @@ def step(context):
 @then("return on all movies view")
 def step(context):
     context.browserWindow.click_on_button_by_xpath("/html/body/main/nav/div/a[1]")
-    context.browserWindow.after_handle()
+    #context.browserWindow.after_handle()

@@ -11,3 +11,12 @@ def before_all(context):
 
 def after_all(context):
     context.browserWindow.browser.quit()
+
+def after_step(context, step):
+
+    #print(context.browserWindow)
+    #print(context.scenario_name)
+    #context.step
+    #print(context.scenario.name + " " + context.step.name)
+    #print(context.browserWindow.get_scenario_name())
+    context.browserWindow.after_handle()
