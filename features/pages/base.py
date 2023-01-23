@@ -26,7 +26,11 @@ class BasePage():
     def __init__(self):
         #self.browser = webdriver.Chrome()
 
-        self.install_env_settings()
+        print("init")
+        #self.install_env_settings()
+
+        print(EnvConst.BROWSER_NAME)
+        print(EnvConst.BROWSER_VERSION)
 
         capabilities = {
             "browserName": self.BROWSER_NAME,
@@ -41,9 +45,11 @@ class BasePage():
         #http://localhost:4444/wd/hub
         #http://127.0.0.1:4444/wd/hub
         #http://0.0.0.0:4444/wd/hub
+
+
         self.browser = webdriver.Remote(
-            command_executor="http://172.17.0.3:4444/wd/hub",
-            desired_capabilities=capabilities)
+           command_executor="http://0.0.0.0:4444/wd/hub",
+           desired_capabilities=capabilities)
 
         #self.browser.get(self.BASE_URL)
 
