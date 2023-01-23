@@ -42,7 +42,7 @@ class BasePage():
         #http://127.0.0.1:4444/wd/hub
         #http://0.0.0.0:4444/wd/hub
         self.browser = webdriver.Remote(
-            command_executor="http://0.0.0.0:4444/wd/hub",
+            command_executor="http://172.17.0.3:4444/wd/hub",
             desired_capabilities=capabilities)
 
         #self.browser.get(self.BASE_URL)
